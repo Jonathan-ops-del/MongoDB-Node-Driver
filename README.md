@@ -14,7 +14,10 @@ Now you can checkout to the second branch called "createOnly". Once the dependen
 
 You may now checkout to the third branch, "readOnly". Once the dependencies are installed using npm install, you can then run "node app.js" in the code editor terminal. Once completed successfully you will see the following below in your console: 
 
+
 Found the following records
+
+
 [
   {
     _id: new ObjectId("64d18e4ee98f413b119b0768"),
@@ -35,6 +38,8 @@ Found the following records
     review: 'Great Stuff!'
   }
 ]
+
+
 
 You are now able to read the array of documents in your fruits collection from your fruitsDB database in your Nodejs project.
 
