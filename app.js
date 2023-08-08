@@ -22,6 +22,7 @@ client.connect(function(err) {
     });
 })
 
+
 const insertDocuments = function(db, callback) {
   // Get the documents collection
   const collection = db.collection('fruits');
@@ -51,14 +52,14 @@ const insertDocuments = function(db, callback) {
   });
 }
 
-const findDocuments = function(db, callback) {
-  // Get the documents collection
-  const collection = db.collection('fruits');
-  // Find some documents
-  collection.find({}).toArray(function(err, fruits) {
-    assert.equal(err, null);
-    console.log("Found the following records");
-    console.log(fruits)
-    callback(fruits);
-  });
-}
+// const findDocuments = function(db, callback) {
+//   // Get the documents collection
+//   const collection = db.collection('fruits');
+//   // Find some documents
+//   collection.find({}).toArray(function(err, fruits) {
+//     assert.equal(err, null);
+//     console.log("Found the following records");
+//     console.log(fruits)
+//     callback(fruits);
+//   });
+// }
